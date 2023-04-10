@@ -106,7 +106,7 @@ const UserProfile = () => {
 					<div className='repos__container'>
 						{repos.map((repo) => (
 							<div className='repo' key={repo.id}>
-								<h3 id='repo__name'>{repo.name}</h3>
+								<h3 id='repo__name'><a href={repo.html_url} target="_blank">{repo.name}</a></h3>
 								<p id='repo__description'>{repo.description}</p>
 								<div className='repo__icons'>
 									<div>
